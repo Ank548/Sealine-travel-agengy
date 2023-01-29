@@ -1,4 +1,4 @@
-/* CSS reset */
+/* CSS RESET */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@
 
 }
 
-/* Head */
+/* HEAD */
 
 #head {
     display: flex;
@@ -62,14 +62,17 @@
     width: max-content;
 }
 
+.btn button:hover{
+    background-color: blue;
+}
 
-/* Section */
+
+/* SECTION */
 
 #section::before {
     content: "";
     background: url(/img/swiper-slide-2.jpg)no-repeat center center/cover;
     position: absolute;
-    /* left: 0; */
     z-index: -1;
     width: 100%;
     height: 700px;
@@ -78,8 +81,6 @@
 
 #section {
     display: flex;
-    /* padding: 0px 110px; */
-    /* width: ; */
     height: 700px;
     align-items: center;
     justify-content: center;
@@ -88,7 +89,7 @@
 .flex {
     display: flex;
     align-items: center;
-    width: 70vw;
+    width: 80vw;
     justify-content: space-between;
 }
 
@@ -122,7 +123,6 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.855);
-    /* margin: 0 200px; */
     margin-left: 150px;
     border-radius: 8px;
     padding: 20px 18px;
@@ -174,7 +174,7 @@
     font-weight: bold;
 }
 
-/* menu */
+/* MENU */
 
 .menu {
     display: none;
@@ -257,8 +257,6 @@
     left: 140px;
     padding-top: 50px;
     font-size: 40px;
-    /* z-index: -2; */
-    /* font-weight: lighter; */
 }
 
 .backh {
@@ -268,24 +266,22 @@
     width: 84vw;
     letter-spacing: 12px;
     padding-left: 35px;
-    /* z-index: -2; */
 }
 
 
-/* Images */
+/* IMAGES */
 
 .img1 {
     display: flex;
+    margin-top: 20px;
 }
 
 .img1>div {
     margin: 25px 15px;
-    /* max-height: 300px; */
     position: relative;
-    /* z-index: -3; */
 }
 
-.img1 img:hover + div .btn1 , .btn1:hover {
+.img1 img:hover+.bttbox {
     display: block;
 }
 
@@ -296,7 +292,6 @@
 }
 
 .img1 div .places p:nth-child(1) {
-    /* width: 360px; */
     font-size: 20px;
 }
 
@@ -305,27 +300,18 @@
     font-size: 20px;
 }
 
-/* .btn1 {
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    padding: 12px 35px;
-    font-size: 18px;
-    width: max-content;
-    position: absolute;
-    left: 150.05px;
-    top: 130px;
+.bttbox {
     display: none;
-} */
+}
 
-.btt{
-    background-color: rgba(36, 36, 36, 0.618);
-    /* padding: 28% 36%; */
+.btt {
+    background-color: rgba(36, 36, 36, 0.379);
     width: 100%;
     height: 85%;
     position: absolute;
-    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     border-radius: 10px;
 }
@@ -338,7 +324,6 @@
     background-color: rgba(228, 227, 227, 0.326);
     padding: 80px 0;
     margin-top: 120px;
-    /* display: none; */
 }
 
 .services section {
@@ -428,7 +413,7 @@
     padding: 0 20px;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(186, 185, 185, 0.812);
-    ;
+    height: 74px;
 }
 
 .bt div span:hover {
@@ -466,7 +451,6 @@
 
 .test {
     display: flex;
-    /* margin: 30px 200px; */
     width: 80vw;
 }
 
@@ -477,7 +461,6 @@
 .customer {
     min-width: 230px;
     max-width: 250px;
-    /* height: 230px; */
 }
 
 .feedback {
