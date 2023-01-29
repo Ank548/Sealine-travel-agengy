@@ -1,0 +1,499 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all;
+    transition-duration: 0.25s;
+    /* border: 1px solid; */
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* Head */
+
+#head {
+    display: flex;
+    padding: 18px 10px;
+    background-color: rgb(248, 245, 245);
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+.nav {
+    display: flex;
+    width: 65vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    padding: 12px 12px;
+    margin: 12px 12px;
+    color: black;
+    font-size: large;
+}
+
+.btn button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 12px 35px;
+    font-size: 18px;
+    width: max-content;
+}
+
+
+/* Section */
+
+#section::before {
+    content: "";
+    background: url(/img/swiper-slide-2.jpg)no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 700px;
+
+}
+
+#section {
+    display: flex;
+    padding: 0px 110px;
+    height: 700px;
+    align-items: center;
+}
+
+.sec {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+.sec h2 {
+    margin-bottom: 48px;
+    font-size: 40px;
+}
+
+.sec button {
+    margin-top: 20px;
+    padding: 15px 0px;
+    border-radius: 40px;
+    background-color: transparent;
+    width: 170px;
+    border: 2px solid white;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sect2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.855);
+    margin: 0 200px;
+    border-radius: 8px;
+    padding: 20px 18px;
+}
+
+
+/* FORM */
+
+
+.num1 select {
+    width: 400px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: none;
+}
+
+.num input {
+    width: 400px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: none;
+}
+
+.num3 select {
+    width: 190px;
+}
+
+.num3 {
+    margin-left: 20px;
+}
+
+.num6 input {
+    width: 185px;
+}
+
+.num7 input {
+    width: 185px;
+}
+
+.num4 input {
+    width: 190px;
+}
+
+.num5 {
+    display: flex;
+}
+
+.numi input {
+    background-color: orange;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* menu */
+
+.menu {
+    display: none;
+    width: 290px;
+    position: absolute;
+    z-index: 2;
+}
+
+.hh ul {
+    width: 150%;
+}
+
+.nav ul li:hover .menu {
+    display: block;
+}
+
+
+.menu ul {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 36px;
+
+}
+
+.menu ul li {
+    padding: 15px 5px;
+}
+
+.menu span {
+    display: none;
+}
+
+
+.nav ul li a:hover {
+    color: orange;
+}
+
+.menu ul li:hover span {
+    display: inline;
+    color: rgb(250, 42, 23);
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 3;
+}
+
+.nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown ul {
+    display: block;
+    margin-top: 35px;
+    background-color: white;
+}
+
+.dropdown ul li {
+    padding: 12px 12px;
+}
+
+
+
+/* SECONDROW */
+
+.secondrow {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 85px;
+}
+
+.fronth {
+    position: absolute;
+    left: 140px;
+    padding-top: 50px;
+    font-size: 40px;
+    /* z-index: -2; */
+    /* font-weight: lighter; */
+}
+
+.backh {
+    font-size: 80px;
+    opacity: 0.1;
+    color: rgba(139, 139, 139, 0.884);
+    width: 84vw;
+    letter-spacing: 12px;
+    padding-left: 50px;
+    /* z-index: -2; */
+}
+
+
+/* Images */
+
+.img1 {
+    display: flex;
+}
+
+.img1>div {
+    margin: 40px 15px;
+    height: 300px;
+    position: relative;
+    /* z-index: -3; */
+}
+
+.img1 div img:hover+.btn1{
+    display: block;
+}
+
+.img1 div div {
+    display: flex;
+    margin: 15px 15px;
+    justify-content: space-between;
+}
+
+.img1 div div p:nth-child(1) {
+    /* width: 360px; */
+    font-size: 20px;
+}
+
+.img1 div div p:nth-child(2) {
+    color: orange;
+    font-size: 20px;
+}
+
+.btn1{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 12px 35px;
+    font-size: 18px;
+    width: max-content;
+    position: absolute;
+    left: 150.05px;
+    top: 130px;
+    /* z-index: 1; */
+    display: none;
+}
+
+
+/* SERVICES */
+
+
+.services{
+    background-color: rgba(228, 227, 227, 0.326);
+    padding: 80px 0;
+    margin-top: 120px;
+}
+
+.services section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services section>i{
+    color: orange;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.services h2{
+    font-size: 35px;
+}
+
+.services section>div {
+    display: flex;
+    margin-top: 40px;
+}
+
+.services section div div{
+    border: 1px solid rgba(194, 193, 193, 0.668);
+    margin: 15px 15px;
+    border-radius: 8px;
+    padding: 40px 20px;
+}
+
+.services section div div:hover{
+    background-color: #fff;
+    box-shadow: 0 0 12px 6px rgba(222, 221, 221, 0.449);
+}
+
+.services section div div p{
+    border-top: 1px solid rgba(208, 206, 206, 0.639);
+    padding: 25px 0;
+}
+
+.services section div div i{
+    color: orange;
+    font-size: 40px;
+}
+
+.services section div div h3{
+    padding: 30px 0;
+}
+
+
+/* NEWS */
+
+.news{
+    display: flex;
+}
+
+.btn2{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 13px;
+    width: max-content;
+}
+
+.bt{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.images2{
+    margin: 20px 20px;
+    width:46.5vw;
+    border-radius: 12px;
+    font-size: 19px;
+}
+
+.images2:hover{
+    box-shadow: 0 0 12px 6px rgba(222, 221, 221, 0.449);
+}
+
+.para{
+    padding: 0 20px;
+    padding-bottom: 30px;
+    border-bottom:1px solid rgba(186, 185, 185, 0.812); ;
+}
+
+.bt div span:hover{
+    color: orange;
+}
+
+.latestnews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.latestnews h2{
+    padding-top: 80px;
+    font-size: 35px;
+}
+
+.latestnews>i{
+    color: orange;
+    font-size: 30px;
+    margin: 25px 0 60px 0;
+}
+
+.btn3{
+    margin: 80px 0;
+}
+
+.btn3 button{
+    padding:19px 35px ;
+}
+
+
+/* TESTIONIALS */
+
+.test{
+    display: flex;
+    margin: 30px 200px;
+}
+
+.test div img{
+    border-radius: 50%;
+}
+
+.customer{
+    width: 900px;
+    height: 230px;
+}
+
+.feedback{
+    margin: 0 80px;
+}
+
+.feedback div:nth-child(1){
+    color: orange;
+    font-size: 80px;
+    line-height: 30px;
+}
+
+.feedback div:nth-child(2) p{
+    font-size: 25px;
+}
+
+.feedback div:nth-child(3){
+    margin: 45px 0;
+}
+
+.feedback div:nth-child(3) h3{
+    margin-bottom: 8px;
+    font-size: 25px;
+    color: rgb(42, 42, 203);
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(228, 227, 227, 0.326);
+}
+
+.testimonials h2{
+    padding-top: 100px;
+    font-size: 35px;
+}
+
+.testimonials i{
+    color: orange;
+    font-size: 30px;
+    margin: 25px 0 60px 0;
+}
