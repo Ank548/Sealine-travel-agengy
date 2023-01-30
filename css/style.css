@@ -62,8 +62,13 @@
     width: max-content;
 }
 
-.btn button:hover{
+.btn button:hover {
     background-color: blue;
+}
+
+#cross,
+#bars {
+    font-size: 37px;
 }
 
 
@@ -71,7 +76,7 @@
 
 #section::before {
     content: "";
-    background: url(/img/swiper-slide-2.jpg)no-repeat center center/cover;
+    background: url(/img/swiper-slide-1.jpg)no-repeat center center/cover;
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -154,17 +159,13 @@
     width: 190px;
 }
 
-.num3,
-.num6 {
-    margin-left: 20px;
-}
-
 .num4 input {
     width: 190px;
 }
 
 .num5 {
     display: flex;
+    justify-content: space-between;
 }
 
 .numi input {
@@ -246,7 +247,6 @@
 
 .secondrow {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin-top: 85px;
     padding: 0 15px;
@@ -273,45 +273,77 @@
 
 .img1 {
     display: flex;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .img1>div {
-    margin: 25px 15px;
-    position: relative;
-    background-color: black;
-    border-radius: 10px;
-    /* z-index: -3; */
+    border-radius: 8px;
+    margin-top: 30px;
+    width: 30.5vw;
 }
 
-.img1 div img:hover+.btn1, .btn1:hover{
+.img1 .places {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+}
+
+.btt {
+    border-radius: 8px;
+    position: relative;
+}
+
+.btt:hover .call {
     display: block;
 }
 
-.img1 div img:hover{
-    opacity: 0.5;
-}
-
-.img1 div div {
+.btt .btn {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    align-items: center;
+    top: 0;
     display: flex;
-    margin: 15px 15px;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.298);
+    border-radius: 8px;
 }
 
-.img1 div .places p:nth-child(1) {
+.call {
+    display: none;
+}
+
+/* .img1 div .bt:hover+.btn1, .btn1:hover{
+    display: block;
+} */
+
+/* .img1 div img:hover{
+    opacity: 0.5;
+} */
+
+/* .img1 div .places {
+    display: flex;
+    margin: 15px 25px;
+    justify-content: space-between;
+} */
+
+.img1 .places p:nth-child(1) {
     font-size: 20px;
 }
 
-.img1 div .places p:nth-child(2) {
+.img1 .places p:nth-child(2) {
     color: orange;
     font-size: 20px;
 }
 
+/* 
 .btn1:hover{
     background-color: blue;
-}
+} */
 
-.btn1{
+/* .btn1{
     background-color: orange;
     color: white;
     border: none;
@@ -322,21 +354,8 @@
     position: absolute;
     left: 150.05px;
     top: 130px;
-    /* z-index: 1; */
     display: none;
-}
-
-.btt {
-    background-color: rgba(36, 36, 36, 0.379);
-    width: 100%;
-    height: 85%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    border-radius: 10px;
-}
+} */
 
 
 /* SERVICES */
