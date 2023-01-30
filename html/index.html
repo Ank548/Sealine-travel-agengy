@@ -8,6 +8,11 @@
     <title>Sealine Travel Agency</title>
     <script src="https://kit.fontawesome.com/882d160b37.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Teko&family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -62,69 +67,73 @@
 
 
     <div id="section">
-        <section class="sec">
-            <h2>
-                THE TRIP OF YOUR DREAMS
-            </h2>
-            <p>Our travel agency is ready to offer you an exciting vacation that is designed to fit your own needs and
-                wishes. Whether it's an exotic cruise or a trip to your favorite resort, you will surely have the best
-                experience.
+        <div class="flex">
+            <section class="sec">
+                <h2>
+                    THE TRIP OF YOUR DREAMS
+                </h2>
+                <p>Our travel agency is ready to offer you an exciting vacation that is designed to fit your own needs
+                    and
+                    wishes. Whether it's an exotic cruise or a trip to your favorite resort, you will surely have the
+                    best
+                    experience.
 
-            </p>
-            <button>LEARN MORE</button>
-        </section>
-        <aside class="sect2">
+                </p>
+                <button>LEARN MORE</button>
+            </section>
+            <aside class="sect2">
 
-            <h2>FIND YOUR TOUR</h2>
-            <form action="">
-                From
-                <div class="num1">
-                    <select name="from" id="fromcity">
-                        <option value="newyork">New York</option>
-                        <option value="lisbon">Lisbon</option>
-                        <option value="stockholm">Stockholm</option>
-                    </select>
-                </div>
-                To
-                <div class="num1">
-                    <select name="to" id="tocity">
-                        <option value="chicago">Chicago</option>
-                        <option value="madrid">Madrid</option>
-                        <option value="paris">Paris</option>
-                    </select>
-                </div>
-                <div class="num5">
-                    <div class="num num4">
-                        <div> Depart Date</div>
-                        <input type="date" name="date" id="date">
-                    </div>
-                    <div class="num1 num3">
-                        <div> Duration</div>
-                        <select name="duration" id="duration">
-                            <option value="any">Any Length</option>
-                            <option value="2days">2 Days</option>
-                            <option value="3days">3 Days</option>
-                            <option value="4days">4 Days</option>
+                <h2>FIND YOUR TOUR</h2>
+                <form action="">
+                    From
+                    <div class="num1">
+                        <select name="from" id="fromcity">
+                            <option value="newyork">New York</option>
+                            <option value="lisbon">Lisbon</option>
+                            <option value="stockholm">Stockholm</option>
                         </select>
                     </div>
-                </div>
-                <div class="num5">
-                    <div class="num num7">
-                        Adults
-                        <input type="number">
+                    To
+                    <div class="num1">
+                        <select name="to" id="tocity">
+                            <option value="chicago">Chicago</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="paris">Paris</option>
+                        </select>
                     </div>
-                    <div class="num num6">
-                        Children
-                        <input type="number">
+                    <div class="num5">
+                        <div class="num num4">
+                            <div> Depart Date</div>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="num1 num3">
+                            <div> Duration</div>
+                            <select name="duration" id="duration">
+                                <option value="any">Any Length</option>
+                                <option value="2days">2 Days</option>
+                                <option value="3days">3 Days</option>
+                                <option value="4days">4 Days</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
+                    <div class="num5">
+                        <div class="num num4">
+                            <div>Adults</div>
+                            <input type="number">
+                        </div>
+                        <div class="num num4 num6">
+                            <div>Childrens</div>
+                            <input type="number">
+                        </div>
+                    </div>
 
-                <div class="num numi">
-                    <input type="submit" value="SEARCH FLIGHT">
-                </div>
-            </form>
+                    <div class="num numi">
+                        <input type="submit" value="SEARCH FLIGHT">
+                    </div>
+                </form>
 
-        </aside>
+            </aside>
+        </div>
     </div>
 
 
@@ -142,46 +151,58 @@
 
     <div>
         <div class="img1">
-            <div><img src="/img/img1.jpg" alt="image" width="100%" height="100%">
-                <button class="btn1">Learn More</button>
-                <div>
+            <div><img src="/img/img1.jpg" alt="image" width="100%" height="85%">
+                <div class="bttbox">
+                    <div class="btt btn"><button class="btn1">Learn More</button></div>
+                </div>
+                <div class="places">
                     <p>France, Paris</p>
                     <p>from $280</p>
                 </div>
             </div>
-            <div><img src="/img/img2.jpg" alt="image" width="100%" height="100%">
-                <button class="btn1">Learn More</button>
-                <div>
+            <div><img src="/img/img2.jpg" alt="image" width="100%" height="85%">
+                <div class="bttbox">
+                    <div class="btt btn"><button class="btn1">Learn More</button></div>
+                </div>
+                <div class="places">
                     <p>USA, Boston</p>
                     <p>from $480</p>
                 </div>
             </div>
-            <div><img src="/img/img3.jpg" alt="image" width="100%" height="100%">
-                <button class="btn1">Learn More</button>
-                <div>
+            <div><img src="/img/img3.jpg" alt="image" width="100%" height="85%">
+                <div class="bttbox">
+                    <div class="btt btn"><button class="btn1">Learn More</button></div>
+                </div>
+                <div class="places">
                     <p>Italy, Venice</p>
                     <p>from $350</p>
                 </div>
             </div>
         </div>
         <div class="img1">
-            <div><img src="/img/img4.jpg" alt="image" width="100%" height="100%">
-                <button class="btn1">Learn More</button>
-                <div>
+            <div><img src="/img/img4.jpg" alt="image" width="100%" height="85%">
+                <div class="bttbox">
+                    <div class="btt btn"><button class="btn1">Learn More</button></div>
+                </div>
+                <div class="places">
                     <p>Spain, Benidorm</p>
                     <p>from $350</p>
                 </div>
             </div>
-            <div><img src="/img/img5.jpg" alt="image" width="100%" height="100%">
-                <button class="btn1">Learn More</button>
-                <div>
+            <div><img src="/img/img5.jpg" alt="image" width="100%" height="85%">
+                <div class="bttbox">
+                    <div class="btt btn"><button class="btn1">Learn More</button></div>
+                </div>
+                <div class="places">
                     <p>Egypt, Sharm El Sheikh</p>
                     <p>from $520</p>
                 </div>
             </div>
-            <div><img src="/img/img6.jpg" alt="image" width="100%" height="100%">
-                <button class="btn1">Learn More</button>
-                <div>
+            <div><img src="/img/img6.jpg" alt="image" width="100%" height="85%">
+                <div class="bttbox">
+                    <div class="btt btn"><button class="btn1">Learn More</button></div>
+                </div>
+                <div class="places">
                     <p>UK, London</p>
                     <p>from $600</p>
                 </div>
@@ -268,7 +289,7 @@
         <h2>TESTIMONIALS</h2>
         <i class="fa-solid fa-water"></i>
         <div class="test">
-            <div class="customer"><img src="/img/img9.jpg" alt="" width="100%" height="100%"></div>
+            <div class="customer"><img src="/img/img9.jpg" alt="" width="100%"></div>
             <div class="feedback">
                 <div>"</div>
                 <div>
