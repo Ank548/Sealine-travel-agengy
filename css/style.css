@@ -272,11 +272,17 @@
     margin: 40px 15px;
     height: 300px;
     position: relative;
+    background-color: black;
+    border-radius: 10px;
     /* z-index: -3; */
 }
 
-.img1 div img:hover+.btn1{
+.img1 div img:hover+.btn1, .btn1:hover{
     display: block;
+}
+
+.img1 div img:hover{
+    opacity: 0.5;
 }
 
 .img1 div div {
@@ -293,6 +299,10 @@
 .img1 div div p:nth-child(2) {
     color: orange;
     font-size: 20px;
+}
+
+.btn1:hover{
+    background-color: blue;
 }
 
 .btn1{
