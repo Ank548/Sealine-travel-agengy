@@ -6,13 +6,78 @@
 
 /* HEAD */
 
-.nav{
+.nav {
     display: none;
 }
 
 #check:checked~.nav {
     display: block;
 }
+
+#bars {
+    display: block;
+}
+
+#check:checked~label #bars {
+    display: none;
+}
+
+#check:checked~label #cross {
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: max-content;
+}
+
+.btntab {
+    display: none;
+}
+
+.nav nav>ul {
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    /* margin-top: 10px; */
+}
+
+.nav nav>ul>li>a {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    margin-top: 10px;
+    padding-right: 140px;
+}
+
+.nav nav>ul>li>a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.btn button {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 14px;
+}
+
+/* MENU */
+
+.menu {
+    left: 210px;
+    top: -10px;
+}
+
+.nav nav>ul>li {
+    position: relative;
+}
+
+.menu ul {
+    margin-left: 75px;
+}
+
 
 
 /* SECTION */
@@ -28,6 +93,27 @@
 
 #section {
     height: 900px;
+}
+
+@media only screen and (max-width:628px) {
+    #section {
+        height: 960px;
+    }
+
+    #section::before {
+        height: 960px;
+    }
+
+    @media only screen and (max-width:338px){
+        #section {
+            height: 1100px;
+        }
+    
+        #section::before {
+            height: 1100px;
+        }
+    }
+
 }
 
 .sec {
@@ -56,4 +142,171 @@
 
 .num4 input {
     width: 28vw;
+}
+
+
+
+/* SECONDROW */
+
+
+.secondrow {
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.backh {
+    padding-left: 30px;
+    width: 100vw;
+    letter-spacing: 8px;
+    font-size: 75px;
+}
+
+.fronth {
+    left: 113px;
+    padding-top: 65px;
+}
+
+@media only screen and (max-width:720px){
+    .backh {
+        font-size: 65px;
+    }
+
+    .fronth{
+        font-size: 35px;
+        padding-top: 60px;
+    }
+
+    @media only screen and (max-width:630px){
+        .backh {
+            font-size: 55px;
+            padding-left: 20px;
+        }
+    
+        .fronth{
+            padding-top: 40px;
+            left: 90px;
+        }
+
+        @media only screen and (max-width:550px){
+            .backh {
+                font-size: 45px;
+            }
+        
+            .fronth{
+                font-size: 32px;
+                padding-top: 30px;
+                left: 85px;
+            }
+
+            @media only screen and (max-width:470px){
+                .backh {
+                    font-size: 40px;
+                    letter-spacing: 3px;
+                    padding-left: 18px;
+                }
+            
+                .fronth{
+                    font-size: 30px;
+                    padding-top: 25px;
+                    left: 65px;
+                }
+
+                @media only screen and (max-width:366px){
+                    .backh {
+                        font-size: 30px;
+                        letter-spacing: 3px;
+                        padding-left: 18px;
+                    }
+                
+                    .fronth{
+                        padding-top: 15px;
+                        left: 35px;
+                    }
+
+                    @media only screen and (max-width:290px){
+                        .backh {
+                            font-size: 25px;
+                            letter-spacing: 3px;
+                            padding-left: 18px;
+                        }
+                    
+                        .fronth{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.secondrowbtn {
+    margin: 15px 0;
+} 
+
+
+/* IMAGES */
+
+.img1>div {
+    width: 45vw;
+}
+
+@media only screen and (max-width:750px) {
+    .img1>div {
+        width: 85vw;
+    }
+}
+
+
+/* SERVICES */
+
+.services section>div {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.services section div div {
+    width: 45vw;
+}
+
+@media only screen and (max-width:610px) {
+    .services section div div {
+        width: 80vw;
+    }
+}
+
+
+/* NEWS */
+
+@media only screen and (max-width:750px) {
+    .news {
+        flex-direction: column;
+    }
+
+    .images2 {
+        width: 85vw;
+    }
+}
+
+
+/* TESTIMONIALS */
+
+.test {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 90vw;
+}
+
+.feedback {
+    margin:0;
+    margin-top: 40px;
+}
+
+.feedback div:nth-child(1){
+    font-size: 70px;
+}
+
+.feedback div:nth-child(2){
+    font-size: 20px;
 }
