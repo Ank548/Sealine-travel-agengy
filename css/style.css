@@ -502,3 +502,129 @@
     font-size: 30px;
     margin: 25px 0 60px 0;
 }
+
+
+
+/* TOURS */
+
+.tours {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tours>div {
+    width: 32.96vw;
+    position: relative;
+    /* border: 2px solid; */
+}
+
+.tours .toursh3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.219);
+    height: 99%;
+    width: 100%;
+    top: 0;
+    color: #fff;
+}
+
+.tourdiv {
+    display: none;
+}
+
+.tours>div:hover .tourdiv {
+    display: block;
+}
+
+.toursh3 p {
+    width: 60%;
+    padding-top: 25px;
+}
+
+/* BOOK */
+
+.book {
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 12px;
+}
+
+.book h2 {
+    color: orange;
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+
+.book p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.bookbtn button {
+    background-color: rgb(27, 26, 26);
+    border: 1px solid white;
+    padding: 12px 55px;
+}
+
+.bookbtn button:hover {
+    background-color: orange;
+    border: none;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    padding: 0 12px;
+}
+
+.brands {
+    display: flex;
+    /* background-color: #fff; */
+}
+
+footer div p {
+    color: rgb(81, 81, 81);
+}
+
+.brands div i {
+    color: white;
+    background-color: rgb(81, 81, 81);
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.brands div:nth-child(1) i:hover {
+    background-color: rgb(133, 160, 227);
+}
+
+.brands div:nth-child(2) i:hover {
+    background-color: rgb(66, 202, 230);
+}
+
+.brands div:nth-child(3) i:hover {
+    background-color: rgb(244, 26, 59);
+}
+.brands div:nth-child(4) i:hover {
+    background-color: rgb(236, 19, 19);
+}
+.brands div:nth-child(5) i:hover {
+    background-color: rgb(4, 92, 208);
+}
+
+.brands div {
+    margin: 4px;
+    /* border-radius: 50%; */
+}
