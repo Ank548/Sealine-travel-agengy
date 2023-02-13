@@ -57,7 +57,7 @@
     color: white;
 }
 
-.btn button {
+.secondrowbtn button {
     border-radius: 30px;
     padding: 10px 25px;
     font-size: 14px;
@@ -104,11 +104,11 @@
         height: 960px;
     }
 
-    @media only screen and (max-width:338px){
+    @media only screen and (max-width:338px) {
         #section {
             height: 1100px;
         }
-    
+
         #section::before {
             height: 1100px;
         }
@@ -166,71 +166,71 @@
     padding-top: 65px;
 }
 
-@media only screen and (max-width:720px){
+@media only screen and (max-width:720px) {
     .backh {
         font-size: 65px;
     }
 
-    .fronth{
+    .fronth {
         font-size: 35px;
         padding-top: 60px;
     }
 
-    @media only screen and (max-width:630px){
+    @media only screen and (max-width:630px) {
         .backh {
             font-size: 55px;
             padding-left: 20px;
         }
-    
-        .fronth{
+
+        .fronth {
             padding-top: 40px;
             left: 90px;
         }
 
-        @media only screen and (max-width:550px){
+        @media only screen and (max-width:550px) {
             .backh {
                 font-size: 45px;
             }
-        
-            .fronth{
+
+            .fronth {
                 font-size: 32px;
                 padding-top: 30px;
                 left: 85px;
             }
 
-            @media only screen and (max-width:470px){
+            @media only screen and (max-width:470px) {
                 .backh {
                     font-size: 40px;
                     letter-spacing: 3px;
                     padding-left: 18px;
                 }
-            
-                .fronth{
+
+                .fronth {
                     font-size: 30px;
                     padding-top: 25px;
                     left: 65px;
                 }
 
-                @media only screen and (max-width:366px){
+                @media only screen and (max-width:366px) {
                     .backh {
                         font-size: 30px;
                         letter-spacing: 3px;
                         padding-left: 18px;
                     }
-                
-                    .fronth{
+
+                    .fronth {
                         padding-top: 15px;
                         left: 35px;
                     }
 
-                    @media only screen and (max-width:290px){
+                    @media only screen and (max-width:290px) {
                         .backh {
                             font-size: 25px;
                             letter-spacing: 3px;
                             padding-left: 18px;
                         }
-                    
-                        .fronth{
+
+                        .fronth {
                             font-size: 25px;
                         }
                     }
@@ -242,7 +242,7 @@
 
 .secondrowbtn {
     margin: 15px 0;
-} 
+}
 
 
 /* IMAGES */
@@ -269,7 +269,7 @@
     width: 45vw;
 }
 
-@media only screen and (max-width:610px) {
+@media only screen and (max-width:768px) {
     .services section div div {
         width: 80vw;
     }
@@ -286,6 +286,20 @@
     .images2 {
         width: 85vw;
     }
+
+    /* TOURS */
+    .tours>div{
+        width: 50%;
+    }
+
+    /* MENU */
+    .menu{
+        position: static;
+    }
+    .menu ul {
+        margin: 0;
+    }
+    
 }
 
 
@@ -299,14 +313,51 @@
 }
 
 .feedback {
-    margin:0;
+    margin: 0;
     margin-top: 40px;
 }
 
-.feedback div:nth-child(1){
+.feedback div:nth-child(1) {
     font-size: 70px;
 }
 
-.feedback div:nth-child(2){
+.feedback div:nth-child(2) {
     font-size: 20px;
+}
+
+
+
+@media only screen and (max-width:1000px){
+    /* BOOK*/
+    .book{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bookbtn{
+        margin-top: 40px;
+    }
+    @media only screen and (max-width:1000px){
+        .book h2{
+            font-size:27px ;
+        }
+        .book p{
+            font-size:15px ;
+        }
+    }
+
+
+    /* FOOTER */
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        height: 220px;
+        text-align: center;
+    }
+
+    footer>div{
+        margin: 10px 0;
+    }
+
 }

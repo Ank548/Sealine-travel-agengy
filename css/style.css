@@ -7,12 +7,6 @@
     transition-duration: 0.25s;
     /* border: 1px solid; */
     font-family: 'Ubuntu', sans-serif;
-    /* For Mobile devices: 320px-480px.
-    For Tablets or iPad: 480px - 768px.
-    For Laptop or small-size screen: 768px -1024px.
-    For Desktop or large-size screen: 1024px -1200px.
-    For Extra-large size device: 1200px and more. */
-
 }
 
 /* HEAD */
@@ -510,10 +504,11 @@
 .tours {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .tours>div {
-    width: 32.96vw;
+    width: 33.33%;
     position: relative;
     /* border: 2px solid; */
 }
@@ -526,8 +521,8 @@
     justify-content: center;
     position: absolute;
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.219);
-    height: 99%;
+    background-color: rgba(0, 0, 0, 0.639);
+    height: 100%;
     width: 100%;
     top: 0;
     color: #fff;
@@ -546,6 +541,10 @@
     padding-top: 25px;
 }
 
+.tours img {
+    display: block;
+}
+
 /* BOOK */
 
 .book {
@@ -553,7 +552,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 12px;
+    padding: 90px 12px;
 }
 
 .book h2 {
@@ -575,7 +574,7 @@
 
 .bookbtn button:hover {
     background-color: orange;
-    border: none;
+    border: 1px solid orange;
 }
 
 /* FOOTER */
@@ -604,10 +603,12 @@ footer div p {
     padding: 12px;
     border-radius: 50%;
     font-size: 20px;
+    width: 45px;
+    text-align: center;
 }
 
 .brands div:nth-child(1) i:hover {
-    background-color: rgb(133, 160, 227);
+    background-color: rgb(102, 133, 212);
 }
 
 .brands div:nth-child(2) i:hover {
@@ -615,11 +616,13 @@ footer div p {
 }
 
 .brands div:nth-child(3) i:hover {
-    background-color: rgb(244, 26, 59);
+    background-color: rgb(239, 73, 47);
 }
+
 .brands div:nth-child(4) i:hover {
     background-color: rgb(236, 19, 19);
 }
+
 .brands div:nth-child(5) i:hover {
     background-color: rgb(4, 92, 208);
 }
