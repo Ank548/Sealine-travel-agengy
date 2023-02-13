@@ -288,18 +288,19 @@
     }
 
     /* TOURS */
-    .tours>div{
+    .tours>div {
         width: 50%;
     }
 
     /* MENU */
-    .menu{
+    .menu {
         position: static;
     }
+
     .menu ul {
         margin: 0;
     }
-    
+
 }
 
 
@@ -327,36 +328,39 @@
 
 
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1000px) {
+
     /* BOOK*/
-    .book{
+    .book {
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
 
-    .bookbtn{
+    .bookbtn {
         margin-top: 40px;
     }
-    @media only screen and (max-width:1000px){
-        .book h2{
-            font-size:27px ;
+
+    @media only screen and (max-width:1000px) {
+        .book h2 {
+            font-size: 27px;
         }
-        .book p{
-            font-size:15px ;
+
+        .book p {
+            font-size: 15px;
         }
     }
 
 
     /* FOOTER */
-    footer{
+    footer {
         flex-direction: column;
         justify-content: center;
         height: 220px;
         text-align: center;
     }
 
-    footer>div{
+    footer>div {
         margin: 10px 0;
     }
 
